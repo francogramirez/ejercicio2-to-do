@@ -1,0 +1,62 @@
+/* font-family: 'Mali', cursive; */
+
+.ctn{ 
+  display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.ctn2{ 
+  display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 25%;
+}
+
+h1{
+  font-family: 'Mali', cursive;
+}
+
+label{
+  font-family: 'Mali', cursive;
+  padding-bottom: 15px;
+}
+
+button{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100px;
+  background-color: rgb(37, 187, 0);
+  color: white;
+  font-family: 'Mali', cursive;
+  transition: all 500ms ease-out;
+}
+
+button:hover{
+  background-color: green;
+  cursor: pointer;
+}
+
+button:disabled{
+  background-color: red;
+}
+
+.tachado{
+    text-decoration: line-through;
+    color: red
+}
+
+li{
+  font-family: 'Mali', cursive;
+  font-size: 25px;
+}
+
+a{
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}

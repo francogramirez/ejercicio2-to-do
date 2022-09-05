@@ -1,0 +1,22 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,600&display=swap" rel="stylesheet">
+
+
+<div class="ctn">
+<h1>LISTA</h1>
+<label for="item">Ingrese un item</label>
+<input placeholder="Ingresar el item" type="text" [(ngModel)]="nombreItem" id="item">
+<button [disabled]="!nombreItem" (click)="guardarItem()">Guardar</button>
+</div>
+<br>
+<div class="ctn2">
+<ul>
+    <li *ngFor="let item of items; let indice = index;" [class.tachado]="item.terminado">
+         <input [(ngModel)]="item.terminado"  type="checkbox">
+        {{item.contenido}}
+        <a (click)="eliminarItem(indice)"class="enlace-eliminar">&times;</a>
+
+    </li>
+</ul>
+</div>
