@@ -11,12 +11,12 @@
 </div>
 <br>
 <div class="ctn2">
-<ul>
+<ol>
     <li *ngFor="let item of items; let indice = index;" [class.tachado]="item.terminado">
          <input [(ngModel)]="item.terminado"  type="checkbox">
-        {{item.contenido}}
+         {{item.contenido}} 
         <a (click)="eliminarItem(indice)"class="enlace-eliminar">&times;</a>
 
     </li>
-</ul>
+</ol>
 </div>

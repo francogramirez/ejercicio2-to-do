@@ -42,7 +42,7 @@ button:hover{
 }
 
 button:disabled{
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.363);
 }
 
 .tachado{
@@ -60,3 +60,4 @@ a{
   color: red;
   cursor: pointer;
 }
+

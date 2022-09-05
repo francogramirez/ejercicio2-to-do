@@ -20,6 +20,10 @@ export class AppComponent implements OnInit{
 
   }
 
+  tachar(){
+    
+  }
+
 eliminarItem(indice: number){
   const confirma = confirm("¿Desea eliminar item?");
   if (confirma){
