@@ -2,13 +2,16 @@
   "name": "ejercicio2-to-do",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "engines": {
+    "node": "16.17.0",
+    "npm": "7.9.0"
   },
   "private": true,
   "dependencies": {
@@ -41,10 +44,5 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
-  },
-
-  "engines": {
-    "node": "16.17.0",
-    "npm": "7.9.0"
   }
 }

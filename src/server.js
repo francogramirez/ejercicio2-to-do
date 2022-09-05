@@ -1,11 +1,8 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
-
-app.use(express.static(__dirname+'/dist/todo-francoramirez'));
-app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/todo-francoramirez/index.html'));
-});
-
+app.use(express.static(__dirname + '/dist/ejercicio2-to-do'));
+app.get('/*', function(req,res) {
+res.sendFile(path.join(__dirname+
+'/dist/ejercicio2-to-do/index.html'));});
 app.listen(process.env.PORT || 8080);
